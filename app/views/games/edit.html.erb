@@ -1,0 +1,10 @@
+<%= form_for @game do |form| %>
+  <p><%= image_tag @question.image_url, alt: @question.description %></p>
+
+  <% @question.guesses.each do |guess| %>
+    <p><%= form.radio_button :guess, guess.id %>
+      <%= form.label :guess, guess.name, value: guess.id %></p>
+  <% end %>
+
+  <p><%= form.submit "Guess" %></p>
+<% end %>
