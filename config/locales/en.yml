@@ -14,3 +14,5 @@ en:
         "%b %-d, %Y"
       short:
         "%B %d"
+  titles:
+    application: mkfriend(1)

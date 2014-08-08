@@ -1,5 +1,5 @@
 <%= form_for @game do |form| %>
-  <p><%= image_tag @question.image_url, alt: @question.description %></p>
+  <p><%= image_tag @question.image_url, alt: @question.description, class: "to-guess" %></p>
 
   <% @question.guesses.each do |guess| %>
     <p><%= form.radio_button :guess, guess.id %>

@@ -4,3 +4,21 @@
 @import 'base/grid-settings';
 @import 'neat';
 @import 'base/base';
+
+.to-guess {
+  width: auto;
+  max-height: 220px;
+}
+
+.thumbnail {
+  width: auto;
+  max-height: 110px;
+}
+
+.correct {
+  background-color: rgb(230,255,230);
+}
+
+.wrong {
+  background-color: rgb(255,230,230);
+}
