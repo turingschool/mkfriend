@@ -21,6 +21,14 @@ After setting up, you can run the application using [foreman]:
 
 [foreman]: http://ddollar.github.io/foreman/
 
+Importing Data
+--------------
+
+The best way to populate your locate database is with real thoughtbottles. Use
+the `thoughtbot:sync` Rake task to do this:
+
+    % rake thoughtbot:sync
+
 Guidelines
 ----------
 
