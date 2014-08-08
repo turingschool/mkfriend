@@ -218,6 +218,7 @@ DEPENDENCIES
   launchy
   neat (~> 1.5.1)
   newrelic_rpm (>= 3.7.3)
+  nokogiri
   pg
   rack-timeout
   rails (= 4.1.4)
