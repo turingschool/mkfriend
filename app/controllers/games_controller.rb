@@ -8,6 +8,12 @@ class GamesController < ApplicationController
   end
 
   ##
+  # Tell the user their results.
+  def show
+    @game = Game.find(params[:id])
+  end
+
+  ##
   # Generate a list of 10 random people and start the user down the path of
   # guesswork and frustration.
   def create
@@ -23,7 +29,9 @@ class GamesController < ApplicationController
   # Prompt the player with a question, await their guess.
   def edit
     @game = Game.find(params[:id])
-    @question = @game.next_question
+    unless @question = @game.next_question
+      redirect_to game_url(@game)
+    end
   end
 
   ##

@@ -1,0 +1,20 @@
+<h1>Your Results</h1>
+
+<table>
+  <thead>
+    <tr>
+      <td>Thumbnail</td>
+      <td>Your guess</td>
+      <td>The answer</td>
+    </tr>
+  </thead>
+  <tbody>
+    <% @game.questions.each do |question| %>
+      <tr class="<%= question.correct? ? "correct" : "wrong" %>">
+        <td><%= image_tag question.image_url, alt: question.description %></td>
+        <td><%= question.guessed_person.name %></td>
+        <td><%= question.person.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
