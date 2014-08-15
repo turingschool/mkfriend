@@ -26,12 +26,12 @@ describe Game do
       question = create(:question, guessed_person_id: 2)
       game = question.game
 
-      expect(game.next_question).to be_false
+      expect(game.next_question).to be_falsey
     end
 
     it "produces false when the Game has no Questions" do
       game = create(:game)
-      expect(game.next_question).to be_false
+      expect(game.next_question).to be_falsey
     end
   end
 
