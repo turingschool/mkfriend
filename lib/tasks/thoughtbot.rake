@@ -1,20 +1,23 @@
-PEOPLE_URL = "http://thoughtbot.com/people"
-
 namespace :thoughtbot do
-  desc "Pull in new thoughtbot people"
-  task sync: :environment do
-    require 'nokogiri'
-    require 'open-uri'
-
+  desc "Populate DB from config/people.yml"
+  task populate: :environment do
     failures = []
-    people_html = open(PEOPLE_URL) { |f| f.read }
-    people_doc = Nokogiri::HTML(people_html)
 
-    people_doc.css(".photo-list li img").each do |image|
+    people = YAML.load(File.new(Rails.root.join("config", "people.yml")))
+
+    people.each do |slug, data|
+      image_path = data["image"] || "#{slug.split('-').first}.jpg"
+
+      image_url = "http://images.thoughtbot.com/team/#{image_path}"
+
       person = Person.new(
-        image_url: image["src"],
-        name: image["alt"]
+        image_url: image_url,
+        name: data["name"],
+        title: data["title"],
+        bio: data["bio"],
+        trivia: (data["trivia"] || []).join(Person::TRIVIA_SEPARATOR)
       )
+
       unless person.save
         failures << person
       end

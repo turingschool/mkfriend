@@ -25,9 +25,9 @@ Importing Data
 --------------
 
 The best way to populate your locate database is with real thoughtbottles. Use
-the `thoughtbot:sync` Rake task to do this:
+the `thoughtbot:populate` Rake task to do this:
 
-    % rake thoughtbot:sync
+    % rake thoughtbot:populate
 
 Guidelines
 ----------
