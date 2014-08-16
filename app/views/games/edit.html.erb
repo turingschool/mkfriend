@@ -1,17 +1,17 @@
 <div id="previous-person">
-<% if @previous_person %>
-  <p>
-    <strong><%= @previous_person.name %></strong>
-  </p>
+  <% if @previous_person.present? %>
+    <p>
+      <strong><%= @previous_person.name %></strong>
+    </p>
 
-  <p><%= image_tag @previous_person.image_url %></p>
-  <p><%= raw @previous_person.bio %></p>
-  <ul>
-    <% @previous_person.trivia.each do |trivium| %>
-      <li><%= trivium %></li>
-    <% end %>
-  </ul>
-<% end %>
+    <p><%= image_tag @previous_person.image_url %></p>
+    <p><%= raw @previous_person.bio %></p>
+    <ul>
+      <% @previous_person.trivia.each do |trivium| %>
+        <li><%= trivium %></li>
+      <% end %>
+    </ul>
+  <% end %>
 </div>
 
 <div id="current-person">
