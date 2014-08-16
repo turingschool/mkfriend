@@ -23,13 +23,13 @@ class Game < ActiveRecord::Base
   ##
   # Produce the next unanswered Question.
   def next_question
-    questions.find_by(guessed_person_id: nil)
+    questions.by_position.find_by(guessed_person_id: nil)
   end
 
   ##
   # Produce the most-recently-answered Question.
   def previous_question
-    questions.where.not(guessed_person_id: nil).last
+    questions.by_position.where.not(guessed_person_id: nil).last || NullQuestion.new
   end
 
   ##

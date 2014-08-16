@@ -17,7 +17,8 @@ describe Game do
     it "produces the next unanswered Question" do
       question = create(:question, guessed_person_id: 2)
       game = question.game
-      next_question = create(:question, game: game)
+      create(:question, game: game, position: 2)
+      next_question = create(:question, game: game, position: 1)
 
       expect(game.next_question).to eq(next_question)
     end
@@ -38,11 +39,11 @@ describe Game do
   context "#previous_question" do
     it "is the most recent answered question" do
       game = create(:game)
-      create(:question, game: game, guessed_person_id: 3)
-      question = create(:question, game: game, guessed_person_id: 3)
+      previous_question = create(:question, game: game, guessed_person_id: 3, position: 4)
+      create(:question, game: game, guessed_person_id: 3, position: 3)
       create(:question, game: game, guessed_person_id: nil)
 
-      expect(game.previous_question).to eq question
+      expect(game.previous_question).to eq previous_question
     end
   end
 
