@@ -1,42 +1,67 @@
 require "spec_helper"
 
 feature "gameplay" do
-  context "a correct guess" do
-    scenario "shows that you are correct" do
-      person = create(:person, name: "Mike Burns", trivia: "trivia1\ntrivia2", bio: "Awesome.")
-      next_person = create(:person, image_url: "http://example.com/2")
-      create_list(:person, 2)
-      stack_randomizer [person, next_person]
+  context "an incorrect or incorrect guess" do
+    it "shows the trivia, bio, and image for the previous person" do
+      person = create(:person, bio: "Radical", trivia: "trivia1\ntrivia2")
+      start_game_with [person, create(:person)]
 
-      visit root_url
-      click_button "Start"
+      guess(person)
 
-      choose(person.name)
-      click_button("Guess")
-
-      expect(page).to have_content("Correct!")
       expect_to_show_trivia_for(person)
       expect(page).to have_content(person.bio)
-      expect(page).to show_person(person)
-      expect(page).to show_person(next_person)
+      expect(page).to show_image_for(person)
+    end
+
+    it "shows the next person" do
+      person = create(:person)
+      next_person = create(:person)
+      start_game_with [person, next_person]
+
+      guess(person)
+
+      expect(page).to show_image_for(next_person)
     end
   end
 
-  scenario "the last guess" do
-    person = create(:person, name: "Joe Ferris")
-    stack_randomizer [person]
+  context "a correct guess" do
+    scenario "shows that you are correct" do
+      person = create(:person)
+      next_person = create(:person)
+      start_game_with [person, next_person]
+
+      guess(person)
+
+      expect(page).to have_content("Correct!")
+    end
+  end
+
+  context "after finishing a game" do
+    scenario "it shows the percentage correct" do
+      first_person = create(:person)
+      second_person = create(:person)
+      start_game_with [first_person, second_person]
+
+      2.times { guess(first_person) }
+
+      expect(page).to have_content("50.0% right - you got 1 wrong")
+    end
+  end
+
+  ##
+  # Start a game with the given people, who will be displayed in order.
+  def start_game_with(people)
+    stack_randomizer people
 
     visit root_url
     click_button "Start"
+  end
 
-    Question.where.not(person_id: person.id).each do |question|
-      question.update(guessed_person_id: person.id)
-    end
-
-    choose("Joe Ferris")
+  ##
+  # Guess that the person currently displayed is `person`
+  def guess(person)
+    choose(person.name)
     click_button("Guess")
-
-    expect(page).to have_content("Your Results")
   end
 
   ##
