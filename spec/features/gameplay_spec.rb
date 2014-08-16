@@ -17,6 +17,7 @@ feature "gameplay" do
       expect(page).to have_content("Correct!")
       expect_to_show_trivia_for(person)
       expect(page).to have_content(person.bio)
+      expect(page).to show_person(person)
       expect(page).to show_person(next_person)
     end
   end

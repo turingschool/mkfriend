@@ -3,6 +3,7 @@
     Here's some more info about <%= @previous_person.name %>:
   </p>
 
+  <p><%= image_tag @previous_person.image_url %></p>
   <p><%= raw @previous_person.bio %></p>
   <ul>
     <% @previous_person.trivia.each do |trivium| %>
@@ -10,6 +11,8 @@
     <% end %>
   </ul>
 <% end %>
+
+<hr/>
 
 <%= form_for @game do |form| %>
   <p><%= image_tag @question.image_url, alt: @question.description, class: "to-guess" %></p>
