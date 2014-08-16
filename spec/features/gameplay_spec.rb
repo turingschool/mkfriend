@@ -3,7 +3,7 @@ require "spec_helper"
 feature "gameplay" do
   context "a correct guess" do
     scenario "shows that you are correct" do
-      person = create(:person, name: "Mike Burns", trivia: "trivia1\ntrivia2")
+      person = create(:person, name: "Mike Burns", trivia: "trivia1\ntrivia2", bio: "Awesome.")
       next_person = create(:person, image_url: "http://example.com/2")
       create_list(:person, 2)
       stack_randomizer [person, next_person]
@@ -16,6 +16,7 @@ feature "gameplay" do
 
       expect(page).to have_content("Correct!")
       expect_to_show_trivia_for(person)
+      expect(page).to have_content(person.bio)
       expect(page).to show_person(next_person)
     end
   end

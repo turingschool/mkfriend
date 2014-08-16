@@ -1,6 +1,7 @@
 <% if @previous_person %>
   <p>Here's some more info about <%= @previous_person.name %></p>
 
+  <p><%= @previous_person.bio %></p>
   <ul>
     <% @previous_person.trivia.each do |trivium| %>
       <li><%= trivium %></li>
