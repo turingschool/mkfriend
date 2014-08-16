@@ -54,6 +54,7 @@ kyle-fiedler:
 
 jason-draper:
   name: Jason Draper
+  image: draper.jpg
   title: Managing Director
   bio: >
     Jason leads our Raleigh office. He began his programming career at Virginia Tech writing applications in Ruby on Rails. Since then he has taken every opportunity to improve his coding and TDD skills. Graduating from Radford University tucked in the mountains of Virginia, he enjoys the outdoors, wakeboarding, snowboarding, and riding curves on his motorcycle.
@@ -237,6 +238,7 @@ elliot-winkler:
 
 laila-winner:
   name: Laila Winner
+  image: laila.png
   title: Developer
   bio: >
     Originally from the Pacific Northwest, Laila is a graduate of Dev Bootcamp and apprentice.io. Before deciding to write code for a living, she studied economics, traveled the world, and did marketing for a cleantech startup. She enjoys pair programming, good writing, and most pickled foods.
@@ -259,7 +261,7 @@ sean-griffin:
   bio: >
     Sean is a fanatic about Vim, Rails, and TDD. After spending far too long with PHP and ASP.NET, he's never looked back since joining the Ruby community. When he's not writing code, he enjoys fedoras, fine cigars, and blogging about the games industry.
 
-patrick-brisbin:
+pat-brisbin:
   name: Patrick Brisbin
   title: Developer
   bio: >
@@ -453,6 +455,7 @@ carolann-bonner:
 
 ian-zabel:
   name: Ian Zabel
+  image: iwz.jpg
   title: Developer
   bio: >
     Ian enjoys asking dumb questions for good reasons. He's interested in building useful applications that people love, collaborating with others of varying strengths, pair-programming, and crafting software sustainably. Ian's in the New York office, but grew up in New Jersey where he cut his programming teeth in TI BASIC. In early 2010, he discovered good coffee at Blue Bottle in San Francisco, and it's all been downhill from there.
@@ -471,6 +474,7 @@ keith-smiley:
 
 sean-doyle:
   name: Sean Doyle
+  image: seandoyle.jpg
   title: Developer
   bio: >
     Sean is an avid Rails developer and an aspiring iOS developer. He graduated from Saint Joseph's University with a BS in Computer Science. He works out of the Philadelphia office. He enjoys tight feedback loops, warm weather, road trips, nollie flips, and Wawa.
@@ -495,12 +499,13 @@ rachel-cope:
 
 ian-anderson:
   name: Ian C. Anderson
+  image: ianc.jpg
   title: Developer
   bio: >
     Ian is a Pennsylvania native and a SUNY Fredonia graduate (BS in Computer Science and Sound Recording Technology). He enjoys clear code, playing music, homebrewing, learning, teaching, and guessing how to pronounce Boston suburbs. He is not the Ian from Jethro Tull, but he's not offended if you put him in the same category.
 
 jeff-smith:
-  image: no-photo-man.png
+  image: https://pbs.twimg.com/profile_images/1875471390/image.jpg
   name: Jeff Smith
   title: Designer
   bio: >
