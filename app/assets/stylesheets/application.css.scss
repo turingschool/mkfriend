@@ -5,6 +5,11 @@
 @import 'neat';
 @import 'base/base';
 
+body {
+  @include outer-container;
+  margin-top: 2em;
+}
+
 .to-guess {
   width: auto;
   max-height: 220px;
@@ -21,4 +26,16 @@
 
 .wrong {
   background-color: rgb(255,230,230);
+}
+
+#previous-person {
+  @include span-columns(5);
+  padding-right: 2em;
+  border-right: 3px solid #AAA;
+  height: 500px;
+}
+
+#current-person {
+  @include span-columns(5);
+  @include shift(0.5);
 }
