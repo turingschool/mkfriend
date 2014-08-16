@@ -9,7 +9,7 @@ namespace :thoughtbot do
       person = Person.find_or_initialize_by(slug: slug)
 
       result = person.update(
-        image_url: person_image_url(data["image_path"], slug),
+        image_url: person_image_url(data["image"], slug),
         name: data["name"],
         title: data["title"],
         bio: data["bio"],
