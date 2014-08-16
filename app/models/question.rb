@@ -8,6 +8,12 @@ class Question < ActiveRecord::Base
   delegate :image_url, :description, to: :person
 
   ##
+  # Order by position, ascending
+  def self.by_position
+    order(:position)
+  end
+
+  ##
   # Four unique Person objects, exactly one of which is our Person.
   def guesses
     (three_guesses + [person]).shuffle

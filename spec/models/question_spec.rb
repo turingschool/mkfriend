@@ -25,4 +25,14 @@ describe Question do
       expect(wrong_question).not_to be_correct
     end
   end
+
+  context ".by_position" do
+    it "returns questions ordered by position" do
+      second = create(:question, position: 2)
+      first = create(:question, position: 1)
+
+      expect(Question.by_position).to eq [first, second]
+    end
+  end
+
 end

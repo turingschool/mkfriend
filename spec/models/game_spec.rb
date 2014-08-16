@@ -35,6 +35,17 @@ describe Game do
     end
   end
 
+  context "#previous_question" do
+    it "is the most recent answered question" do
+      game = create(:game)
+      question = create(:question, game: game, guessed_person_id: 3)
+      create(:question, game: game, guessed_person_id: nil)
+
+      expect(game.previous_question).to eq question
+    end
+  end
+
+
   context "#guess=" do
     it "assigns the guess to the next unanswered Question" do
       question = create(:question)

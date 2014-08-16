@@ -29,7 +29,14 @@ class GamesController < ApplicationController
   # Prompt the player with a question, await their guess.
   def edit
     @game = Game.find(params[:id])
-    unless @question = @game.next_question
+    @question = @game.next_question
+
+    if @question
+      if @game.previous_question
+        @previous_person = @game.previous_question.person
+      end
+      render :edit
+    else
       redirect_to game_url(@game)
     end
   end
@@ -39,6 +46,9 @@ class GamesController < ApplicationController
   def update
     game = Game.find(params[:id])
     game.update(game_attributes)
+    if game.previous_question.correct?
+      flash[:success] = "Correct!"
+    end
     redirect_to edit_game_path(game)
   end
 

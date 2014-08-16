@@ -15,8 +15,8 @@ feature "gameplay" do
       click_button("Guess")
 
       expect(page).to have_content("Correct!")
-      expect(page).to show_trivia_for(person)
-      expect(page).to have_person(next_person)
+      expect_to_show_trivia_for(person)
+      expect(page).to show_person(next_person)
     end
   end
 
@@ -35,5 +35,13 @@ feature "gameplay" do
     click_button("Guess")
 
     expect(page).to have_content("Your Results")
+  end
+
+  ##
+  # Are all of the trivia for this person being shown?
+  def expect_to_show_trivia_for(person)
+    person.trivia.each do |trivium|
+      expect(page).to have_css("li", text: trivium)
+    end
   end
 end
