@@ -23,10 +23,8 @@
   <%= form_for @game do |form| %>
     <p><%= image_tag @question.image_url, class: "to-guess" %></p>
 
-    <% @question.guesses.each do |guess| %>
-      <p><%= form.radio_button :guess, guess.id %>
-        <%= form.label :guess, guess.name, value: guess.id %></p>
-    <% end %>
+    <%= render @guesses.first, checked: true, form: form %>
+    <%= render @guesses[1..-1], checked: false, form: form %>
 
     <p><%= form.submit "Guess" %></p>
   <% end %>

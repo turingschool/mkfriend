@@ -34,6 +34,7 @@ class GamesController < ApplicationController
 
     if @question
       @previous_person = @game.previous_question.person
+      @guesses = @question.guesses
       render :edit
     else
       redirect_to game_url(@game)
@@ -47,6 +48,8 @@ class GamesController < ApplicationController
     game.update(game_attributes)
     if game.previous_question.correct?
       flash[:success] = "Correct!"
+    else
+      flash[:error] = "Nope, that's wrong"
     end
     redirect_to edit_game_path(game)
   end
