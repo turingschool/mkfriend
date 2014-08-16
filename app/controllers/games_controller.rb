@@ -18,7 +18,8 @@ class GamesController < ApplicationController
   # guesswork and frustration.
   def create
     game = Game.new
-    if game.save && game.randomize_list(10)
+    if game.save
+      game.randomize_list(Person.count)
       redirect_to edit_game_url(game)
     else
       render :new, error: "failed to start the game"
@@ -32,9 +33,7 @@ class GamesController < ApplicationController
     @question = @game.next_question
 
     if @question
-      if @game.previous_question
-        @previous_person = @game.previous_question.person
-      end
+      @previous_person = @game.previous_question.person
       render :edit
     else
       redirect_to game_url(@game)
