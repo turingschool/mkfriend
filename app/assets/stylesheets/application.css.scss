@@ -10,6 +10,10 @@ body {
   margin-top: 2em;
 }
 
+#flash_success {
+  @extend %flash-success;
+}
+
 .to-guess {
   width: auto;
   max-height: 220px;
