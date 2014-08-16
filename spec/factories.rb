@@ -10,8 +10,10 @@ FactoryGirl.define do
   sequence(:position) { |n| n }
 
   factory :person do
+    sequence(:slug) { |n| "slug#{n}" }
     name
     image_url
+    bio "I am cool"
   end
 
   factory :game
