@@ -22,5 +22,15 @@ FactoryGirl.define do
     game
     person
     position
+
+    trait :correct do
+      person_id 1
+      guessed_person_id 1
+    end
+
+    trait :incorrect do
+      person_id 1
+      guessed_person_id 2
+    end
   end
 end

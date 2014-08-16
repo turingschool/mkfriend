@@ -14,6 +14,18 @@ class Question < ActiveRecord::Base
   end
 
   ##
+  # Find correctly-answered questions.
+  def self.correct
+    where("person_id = guessed_person_id")
+  end
+
+  ##
+  # Find incorrectly-answered questions.
+  def self.incorrect
+    where("person_id != guessed_person_id")
+  end
+
+  ##
   # Four unique Person objects, exactly one of which is our Person.
   def guesses
     (three_guesses + [person]).shuffle

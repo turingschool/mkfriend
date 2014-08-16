@@ -9,6 +9,11 @@
     </tr>
   </thead>
   <tbody>
+    <h3 id="stats">
+      <%= (@game.questions.correct.count * 100.0 / @game.questions.count).round(1) %>% right -
+      you got <%= @game.questions.incorrect.count %> wrong.
+      <%= link_to "Try again?", root_path %>
+    </h3>
     <% @game.questions.each do |question| %>
       <tr class="<%= question.correct? ? "correct" : "wrong" %>">
         <td><%= image_tag question.image_url, class: "thumbnail" %></td>

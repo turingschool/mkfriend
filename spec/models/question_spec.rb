@@ -35,4 +35,21 @@ describe Question do
     end
   end
 
+  context ".correct" do
+    it "returns correctly-answered questions" do
+      correct = create(:question, :correct)
+      create(:question, :incorrect)
+
+      expect(Question.correct).to eq [correct]
+    end
+  end
+
+  context ".incorrect" do
+    it "returns incorrectly-answered questions" do
+      incorrect = create(:question, :incorrect)
+      create(:question, :correct)
+
+      expect(Question.incorrect).to eq [incorrect]
+    end
+  end
 end
