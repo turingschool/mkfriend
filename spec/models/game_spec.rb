@@ -38,6 +38,7 @@ describe Game do
   context "#previous_question" do
     it "is the most recent answered question" do
       game = create(:game)
+      create(:question, game: game, guessed_person_id: 3)
       question = create(:question, game: game, guessed_person_id: 3)
       create(:question, game: game, guessed_person_id: nil)
 

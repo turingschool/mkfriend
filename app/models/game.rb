@@ -29,7 +29,7 @@ class Game < ActiveRecord::Base
   ##
   # Produce the most-recently-answered Question.
   def previous_question
-    questions.where.not(guessed_person_id: nil).first
+    questions.where.not(guessed_person_id: nil).last
   end
 
   ##
