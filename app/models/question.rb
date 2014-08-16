@@ -5,7 +5,7 @@ class Question < ActiveRecord::Base
   belongs_to :person
   belongs_to :guessed_person, class_name: "Person"
 
-  delegate :image_url, :description, to: :person
+  delegate :image_url, to: :person
 
   ##
   # Order by position, ascending
