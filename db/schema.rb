@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140816003105) do
+ActiveRecord::Schema.define(version: 20140816041706) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,7 +46,10 @@ ActiveRecord::Schema.define(version: 20140816003105) do
     t.text     "trivia",      default: "", null: false
     t.text     "bio"
     t.string   "title"
+    t.string   "slug",                     null: false
   end
+
+  add_index "people", ["slug"], name: "index_people_on_slug", unique: true, using: :btree
 
   create_table "questions", force: true do |t|
     t.datetime "created_at"

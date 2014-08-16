@@ -6,15 +6,17 @@ namespace :thoughtbot do
     people = YAML.load(File.new(Rails.root.join("config", "people.yml")))
 
     people.each do |slug, data|
-      person = Person.new(
-        image_url: image_url(data["image_path"], slug),
+      person = Person.find_or_initialize_by(slug: slug)
+
+      result = person.update(
+        image_url: person_image_url(data["image_path"], slug),
         name: data["name"],
         title: data["title"],
         bio: data["bio"],
         trivia: (data["trivia"] || []).join(Person::TRIVIA_SEPARATOR)
       )
 
-      unless person.save
+      unless result
         failures << person
       end
     end
@@ -27,7 +29,7 @@ namespace :thoughtbot do
     end
   end
 
-  def image_url(image_path, slug)
+  def person_image_url(image_path, slug)
     image_path = image_path || "#{slug.split('-').first}.jpg"
 
     if image_path.start_with?("http")

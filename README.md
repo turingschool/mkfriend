@@ -29,6 +29,10 @@ the `thoughtbot:populate` Rake task to do this:
 
     % rake thoughtbot:populate
 
+It reads data from `config/people.yml`. If you change the data in that file,
+re-run the rake task and it will change the existing records (unless you change
+the slug, like `pat-brisbin`).
+
 Guidelines
 ----------
 
