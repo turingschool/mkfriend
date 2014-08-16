@@ -6,12 +6,8 @@ namespace :thoughtbot do
     people = YAML.load(File.new(Rails.root.join("config", "people.yml")))
 
     people.each do |slug, data|
-      image_path = data["image"] || "#{slug.split('-').first}.jpg"
-
-      image_url = "http://images.thoughtbot.com/team/#{image_path}"
-
       person = Person.new(
-        image_url: image_url,
+        image_url: image_url(data["image_path"], slug),
         name: data["name"],
         title: data["title"],
         bio: data["bio"],
@@ -28,6 +24,16 @@ namespace :thoughtbot do
         puts "failed to save #{person.name}:"
         puts person.errors.full_messages.join("\n")
       end
+    end
+  end
+
+  def image_url(image_path, slug)
+    image_path = image_path || "#{slug.split('-').first}.jpg"
+
+    if image_path.start_with?("http")
+      image_path
+    else
+      "http://images.thoughtbot.com/team/#{image_path}"
     end
   end
 end
