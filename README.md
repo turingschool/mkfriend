@@ -31,11 +31,16 @@ the `thoughtbot:populate` Rake task to do this:
 
 It reads data from `config/people.yml`. If you change the data in that file,
 re-run the rake task and it will change the existing records (unless you change
-the slug, like `pat-brisbin`).
+the slug, like `pat-brisbin`). So if you change something in
+`config/people.yml`, just push it to Heroku and run:
+
+    heroku run rake thoughtbot:populate
+
+Voila, your changes are live.
 
 If you have fun facts that you'd like to share with the other thoughtbottles,
-add it under the `trivia` key, `config/people.yml`. For an example, look under
-"gabe-berke-williams".
+add it under the `trivia` key in `config/people.yml`. For an example, look under
+"gabe-berke-williams" in `config/people.yml`.
 
 Guidelines
 ----------
