@@ -2,7 +2,7 @@
   <% if @previous_person.present? %>
     <h3><%= @previous_person.name %></h3>
     <p>
-      <%= @previous_person.title %>
+      <%= @previous_person.title %> in <%= @previous_person.office %>
     </p>
 
     <p><%= image_tag @previous_person.image_url %></p>

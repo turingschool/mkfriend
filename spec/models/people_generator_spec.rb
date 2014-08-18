@@ -18,7 +18,6 @@ describe PeopleGenerator do
       generator = PeopleGenerator.new
       people = generator.generate(2, excluded_office: "Boston")
 
-      expect(people.count).to eq(1)
       expect(people).to eq [denver]
     end
   end
