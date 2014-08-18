@@ -1,6 +1,34 @@
 require "spec_helper"
 
 feature "gameplay" do
+  it "lets users choose an office to not view" do
+    boston = create(:person, office: "Boston")
+    denver = create(:person, office: "Denver")
+
+    visit root_url
+    select "Denver", from: "Office to exclude"
+    click_button "Start"
+
+    expect(page).to show_image_for(boston)
+
+    guess(boston.name)
+
+    expect_game_to_be_over
+  end
+
+ it "shows all users when users do not choose an office to exclude" do
+   boston = create(:person, office: "Boston")
+   denver = create(:person, office: "Denver")
+
+   visit root_url
+   click_button "Start"
+
+   guess(boston.name)
+   guess(boston.name)
+
+   expect_game_to_be_over
+ end
+
   context "when submitting without choosing a guess" do
     it "selects the first person" do
       person = create(:person)
@@ -113,5 +141,11 @@ feature "gameplay" do
     person.trivia.each do |trivium|
       expect(page).to have_css("li", text: trivium)
     end
+  end
+
+  ##
+  # Assert that the game is over.
+  def expect_game_to_be_over
+    expect(page).to have_content("Your Results")
   end
 end

@@ -4,5 +4,11 @@
 avatar? Start the game to find out!</p>
 
 <%= form_for @game do |form| %>
+  <p>
+    <strong>If you select an office</strong>, you won't be quizzed on that office's employees.
+    For example, if you work in Boston, you might want to select Boston.
+  </p>
+  <%= form.label :excluded_office, "Office to exclude" %>
+  <%= form.collection_select :excluded_office, @offices, :to_s, :to_s, include_blank: "Test me on EVERY office" %>
   <%= form.submit 'Start' %>
 <% end %>

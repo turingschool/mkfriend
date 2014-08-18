@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140816051030) do
+ActiveRecord::Schema.define(version: 20140818194452) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20140816051030) do
   create_table "games", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "excluded_office"
   end
 
   create_table "people", force: true do |t|
@@ -46,6 +47,7 @@ ActiveRecord::Schema.define(version: 20140816051030) do
     t.text     "bio"
     t.string   "title"
     t.string   "slug",                    null: false
+    t.string   "office"
   end
 
   add_index "people", ["slug"], name: "index_people_on_slug", unique: true, using: :btree

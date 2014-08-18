@@ -4,6 +4,7 @@ class GamesController < ApplicationController
   ##
   # Prompt the user to start the game, explaining what it is.
   def new
+    @offices = Person.all_office_names
     @game = Game.new
   end
 
@@ -17,7 +18,7 @@ class GamesController < ApplicationController
   # Generate a list of 10 random people and start the user down the path of
   # guesswork and frustration.
   def create
-    game = Game.new
+    game = Game.new(game_attributes)
     if game.save
       game.randomize_list(Person.count)
       redirect_to edit_game_url(game)
@@ -57,6 +58,6 @@ class GamesController < ApplicationController
   private
 
   def game_attributes
-    params.require(:game).permit(:guess)
+    params.require(:game).permit(:guess, :excluded_office)
   end
 end

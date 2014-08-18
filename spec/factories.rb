@@ -11,9 +11,10 @@ FactoryGirl.define do
 
   factory :person do
     sequence(:slug) { |n| "slug#{n}" }
-    name
-    image_url
     bio "I am cool"
+    image_url
+    name
+    office "Boston"
   end
 
   factory :game

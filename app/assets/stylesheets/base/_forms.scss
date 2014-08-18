@@ -12,6 +12,10 @@ select {
   font-size: $form-font-size;
 }
 
+input[type=submit] {
+  display: block;
+}
+
 label {
   font-weight: bold;
   margin-bottom: $base-line-height / 4;
