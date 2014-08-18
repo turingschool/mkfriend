@@ -33,6 +33,10 @@ It reads data from `config/people.yml`. If you change the data in that file,
 re-run the rake task and it will change the existing records (unless you change
 the slug, like `pat-brisbin`).
 
+If you have fun facts that you'd like to share with the other thoughtbottles,
+add it under the `trivia` key, `config/people.yml`. For an example, look under
+"gabe-berke-williams".
+
 Guidelines
 ----------
 
