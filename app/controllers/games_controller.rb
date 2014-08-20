@@ -21,6 +21,7 @@ class GamesController < ApplicationController
     game = Game.new(game_attributes)
     if game.save
       game.randomize_list(Person.count)
+      flash[:notice] = "Let's get started!"
       redirect_to edit_game_url(game)
     else
       render :new, error: "failed to start the game"

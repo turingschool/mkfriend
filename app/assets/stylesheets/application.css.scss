@@ -18,6 +18,10 @@ body {
   @extend %flash-error;
 }
 
+#flash_notice {
+  @extend %flash-notice;
+}
+
 .to-guess {
   max-height: 220px;
   margin-bottom: 3em;
