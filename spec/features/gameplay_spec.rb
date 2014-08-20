@@ -82,7 +82,7 @@ feature "gameplay" do
       next_person = create(:person)
       start_game_with [person, next_person]
 
-      guess_incorrectly(person.name)
+      guess_incorrectly
 
       expect(page).to have_content("Nope, that's wrong")
     end
@@ -91,12 +91,12 @@ feature "gameplay" do
   context "after finishing a game" do
     scenario "it shows the percentage correct" do
       first_person = create(:person)
-      second_person = create(:person)
-      start_game_with [first_person, second_person]
+      start_game_with([first_person])
 
-      2.times { guess(first_person.name) }
+      guess(first_person.name)
+      guess_remaining_people_incorrectly
 
-      expect(page).to have_content("50.0% right - you got 1 wrong")
+      expect(page).to have_content("10.0% right - you got 9 wrong")
     end
   end
 
@@ -123,13 +123,6 @@ feature "gameplay" do
   end
 
   ##
-  # Make an incorrect guess.
-  def guess_incorrectly(correct_guess)
-    label = all("form label").detect { |tag| ! tag.text.include?(correct_guess) }
-    guess(label.text)
-  end
-
-  ##
   # Just start a game, no fanciness.
   def start_game
     start_game_with create_pair(:person)
@@ -141,6 +134,30 @@ feature "gameplay" do
     person.trivia.each do |trivium|
       expect(page).to have_css("li", text: trivium)
     end
+  end
+
+  def guess_remaining_people_incorrectly
+    while guessing?
+      guess_incorrectly
+    end
+  end
+
+  ##
+  # Are we still guessing people, or is the game over?
+  def guessing?
+    ! page.has_content?("Your Results")
+  end
+
+  ##
+  # Make an incorrect guess
+  def guess_incorrectly
+    correct_guess = Game.first.next_question.person.name
+
+    tag = all("form label").detect do |tag|
+      ! tag.text.include?(correct_guess)
+    end
+
+    guess(tag.text)
   end
 
   ##

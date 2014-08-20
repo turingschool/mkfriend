@@ -20,7 +20,7 @@ class GamesController < ApplicationController
   def create
     game = Game.new(game_attributes)
     if game.save
-      game.randomize_list(Person.count)
+      game.randomize_list(10)
       flash[:notice] = "Let's get started!"
       redirect_to edit_game_url(game)
     else
