@@ -1,9 +1,5 @@
 ENV["RAILS_ENV"] = "test"
 
-
-puts "\n\n\n\nHEy\n\n\n\n"
-
-
 require File.expand_path("../../config/environment", __FILE__)
 
 require "rspec/rails"
