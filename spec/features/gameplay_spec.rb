@@ -6,7 +6,7 @@ feature "gameplay" do
     denver = create(:person, cohort: "Denver")
 
     visit root_url
-    select "Denver", from: "Office to exclude"
+    select "Denver", from: "Cohort to exclude"
     click_button "Start"
 
     expect(page).to show_image_for(boston)

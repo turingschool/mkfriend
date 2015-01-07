@@ -8,7 +8,7 @@ avatar? Start the game to find out!</p>
     <strong>If you select a cohort</strong>, you won't be quizzed on that cohort's employees.
     For example, if you work in Boston, you might want to select Boston.
   </p>
-  <%= form.label :excluded_cohort, "cohort to exclude" %>
+  <%= form.label :excluded_cohort, "Cohort to exclude" %>
   <%= form.collection_select :excluded_cohort, @cohorts, :to_s, :to_s, include_blank: "Test me on EVERY cohort" %>
   <%= form.submit 'Start' %>
 <% end %>
