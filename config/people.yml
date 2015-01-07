@@ -5,3 +5,11 @@ orion-osborn:
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Orion%20Osborn.jpg
   bio: >
     Orion's parents were clearly hippies.
+
+rich-shea:
+  name: Rich Shea
+  title: Student
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Rich%20Shea.jpg
+  bio: >
+    Hey, what's up
