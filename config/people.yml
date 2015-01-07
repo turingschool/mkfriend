@@ -1,12 +1,7 @@
-jeff-casimir:
-  name: Jeff Casimir
-  title: Executive Director
-  bio: >
-    Jeff is just like this guy, you know?
-
 orion-osborn:
   name: Orion Osborn
   title: Student
+  cohort: 1410
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Orion%20Osborn.jpg
   bio: >
     Orion's parents were clearly hippies.

@@ -1,4 +1,4 @@
-namespace :thoughtbot do
+namespace :turing do
   desc "Populate DB from config/people.yml"
   task populate: :environment do
     failures = []
@@ -9,12 +9,11 @@ namespace :thoughtbot do
       person = Person.find_or_initialize_by(slug: slug)
 
       result = person.update(
-        image_url: person_image_url(data["image"], slug),
+        image_url: data["image_url"],
         name: data["name"],
         title: data["title"],
         bio: data["bio"],
         cohort: data["cohort"],
-        trivia: (data["trivia"] || []).join(Person::TRIVIA_SEPARATOR)
       )
 
       unless result

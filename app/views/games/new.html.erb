@@ -1,12 +1,13 @@
 <h1>mkfriend(1): Learn about your coworkers</h1>
 
-<p>How well do you know the thoughtbottles? Can you match 10 in a row to their
-avatar? Start the game to find out!</p>
+<p>How well do you know your fellow students and instructors? Can you match 10
+in a row to their avatar? Start the game to find out!</p>
 
 <%= form_for @game do |form| %>
   <p>
-    <strong>If you select a cohort</strong>, you won't be quizzed on that cohort's employees.
-    For example, if you work in Boston, you might want to select Boston.
+    <strong>If you select a cohort</strong>, you won't be quizzed on that
+    cohort's members. For example, if you already know the people in your own
+    cohort, you might want to exclude it.
   </p>
   <%= form.label :excluded_cohort, "Cohort to exclude" %>
   <%= form.collection_select :excluded_cohort, @cohorts, :to_s, :to_s, include_blank: "Test me on EVERY cohort" %>
