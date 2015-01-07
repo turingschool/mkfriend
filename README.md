@@ -20,23 +20,19 @@ After setting up, you can run the application using [foreman]:
 Importing Data
 --------------
 
-The best way to populate your locate database is with real thoughtbottles. Use
-the `thoughtbot:populate` Rake task to do this:
+The best way to populate your locate database is with real Turing students. Use
+the `turing:populate` Rake task to do this:
 
-    % rake thoughtbot:populate
+    % rake turing:populate
 
 It reads data from `config/people.yml`. If you change the data in that file,
 re-run the rake task and it will change the existing records (unless you change
 the slug, like `pat-brisbin`). So if you change something in
 `config/people.yml`, just push it to Heroku and run:
 
-    heroku run rake thoughtbot:populate
+    heroku run rake turing:populate
 
 Voila, your changes are live.
-
-If you have fun facts that you'd like to share with the other thoughtbottles,
-add it under the `trivia` key in `config/people.yml`. For an example, look under
-"gabe-berke-williams" in `config/people.yml`.
 
 Guidelines
 ----------

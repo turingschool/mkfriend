@@ -28,14 +28,4 @@ namespace :turing do
       end
     end
   end
-
-  def person_image_url(image_path, slug)
-    image_path = image_path || "#{slug.split('-').first}.jpg"
-
-    if image_path.start_with?("http")
-      image_path
-    else
-      "http://images.thoughtbot.com/team/#{image_path}"
-    end
-  end
 end
