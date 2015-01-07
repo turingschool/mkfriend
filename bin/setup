@@ -23,7 +23,4 @@ mkdir -p .git/safe
 # Pick a port for Foreman
 echo "port: 3000" > .foreman
 
-bundle exec rake thoughtbot:populate
-
-git remote add heroku git@heroku.com:thoughtbot-mkfriend.git
-heroku join --app thoughtbot-mkfriend
+bundle exec rake turing:populate
