@@ -5,10 +5,10 @@ avatar? Start the game to find out!</p>
 
 <%= form_for @game do |form| %>
   <p>
-    <strong>If you select an office</strong>, you won't be quizzed on that office's employees.
+    <strong>If you select a cohort</strong>, you won't be quizzed on that cohort's employees.
     For example, if you work in Boston, you might want to select Boston.
   </p>
-  <%= form.label :excluded_office, "Office to exclude" %>
-  <%= form.collection_select :excluded_office, @offices, :to_s, :to_s, include_blank: "Test me on EVERY office" %>
+  <%= form.label :excluded_cohort, "cohort to exclude" %>
+  <%= form.collection_select :excluded_cohort, @cohorts, :to_s, :to_s, include_blank: "Test me on EVERY cohort" %>
   <%= form.submit 'Start' %>
 <% end %>

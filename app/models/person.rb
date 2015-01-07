@@ -5,15 +5,15 @@ class Person < ActiveRecord::Base
   validates :image_url, presence: true
   validates :bio, presence: true
 
-  def self.all_office_names
-    select('DISTINCT office').
-      order(:office).
-      where.not(office: nil).
-      map(&:office)
+  def self.all_cohort_names
+    select('DISTINCT cohort').
+      order(:cohort).
+      where.not(cohort: nil).
+      map(&:cohort)
   end
 
-  def self.with_all_offices_except(office_name)
-    where.not(office: office_name)
+  def self.with_all_cohorts_except(cohort_name)
+    where.not(cohort: cohort_name)
   end
 
   def trivia

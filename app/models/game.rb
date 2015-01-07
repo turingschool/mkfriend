@@ -13,7 +13,7 @@ class Game < ActiveRecord::Base
   # Generate n random Person objects, all unique, using the element_generator,
   # and stash them as Questions.
   def randomize_list(n)
-    people = self.class.element_generator.generate(n, excluded_office: excluded_office)
+    people = self.class.element_generator.generate(n, excluded_cohort: excluded_cohort)
 
     people.each.with_index do |person, position|
       questions.create(person: person, position: position)

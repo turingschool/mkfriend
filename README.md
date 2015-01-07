@@ -1,12 +1,8 @@
 mkfriend
 ========
 
-Test your knowledge of fellow thoughtbottles with this fun game. Can you get 10
+Test your knowledge of fellow students with this fun game. Can you get 10
 in a row correct?
-
-This game was built in preparation for the 2014 Summer Summit. With 50% new
-hires, we can get people familiar with each other more quickly with the help of
-a simple face matching game.
 
 Getting Started
 ---------------

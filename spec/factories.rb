@@ -14,7 +14,7 @@ FactoryGirl.define do
     bio "I am cool"
     image_url
     name
-    office "Boston"
+    cohort "Boston"
   end
 
   factory :game

@@ -13,7 +13,7 @@ namespace :thoughtbot do
         name: data["name"],
         title: data["title"],
         bio: data["bio"],
-        office: data["office"],
+        cohort: data["cohort"],
         trivia: (data["trivia"] || []).join(Person::TRIVIA_SEPARATOR)
       )
 

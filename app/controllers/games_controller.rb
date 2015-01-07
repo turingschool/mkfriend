@@ -4,7 +4,7 @@ class GamesController < ApplicationController
   ##
   # Prompt the user to start the game, explaining what it is.
   def new
-    @offices = Person.all_office_names
+    @cohorts = Person.all_cohort_names
     @game = Game.new
   end
 
@@ -59,6 +59,6 @@ class GamesController < ApplicationController
   private
 
   def game_attributes
-    params.require(:game).permit(:guess, :excluded_office)
+    params.require(:game).permit(:guess, :excluded_cohort)
   end
 end

@@ -13,7 +13,7 @@ module PersonsHelper
     ##
     # Generate n elements. If start_with does not cover it, use FactoryGirl to
     # make the rest.
-    def generate(n, excluded_office:)
+    def generate(n, excluded_cohort:)
       diff = n - @start.length
       if diff > 0
         @start + FactoryGirl.create_list(:person, diff)

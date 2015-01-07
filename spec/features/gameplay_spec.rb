@@ -1,9 +1,9 @@
 require "spec_helper"
 
 feature "gameplay" do
-  it "lets users choose an office to not view" do
-    boston = create(:person, office: "Boston")
-    denver = create(:person, office: "Denver")
+  it "lets users choose an cohort to not view" do
+    boston = create(:person, cohort: "Boston")
+    denver = create(:person, cohort: "Denver")
 
     visit root_url
     select "Denver", from: "Office to exclude"
@@ -16,9 +16,9 @@ feature "gameplay" do
     expect_game_to_be_over
   end
 
- it "shows all users when users do not choose an office to exclude" do
-   boston = create(:person, office: "Boston")
-   denver = create(:person, office: "Denver")
+ it "shows all users when users do not choose an cohort to exclude" do
+   boston = create(:person, cohort: "Boston")
+   denver = create(:person, cohort: "Denver")
 
    visit root_url
    click_button "Start"
