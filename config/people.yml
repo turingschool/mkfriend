@@ -3,13 +3,67 @@ orion-osborn:
   title: Student
   cohort: 1410
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Orion%20Osborn.jpg
-  bio: >
-    Orion's parents were clearly hippies.
+  bio: Orion's parents were clearly hippies.
 
 rich-shea:
   name: Rich Shea
   title: Student
   cohort: 1410
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Rich%20Shea.jpg
-  bio: >
-    Hey, what's up
+  bio: None
+
+aaron-wortham:
+  name: Aaron Wortham
+  title: Student
+  cohort: 1407
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Aaron%20Wortham.jpg
+  bio: None
+
+glen-egbert:
+  name: Glen Egbert
+  title: Student
+  cohort: 1407
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Glen%20Egbert.jpg
+  bio: None
+
+ian-anderson:
+  name: Ian Anderson
+  title: Student
+  cohort: 1407
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Ian%20Anderson.jpg
+  bio: None 
+
+jim-sutton:
+  name: Jim Sutton
+  title: Student
+  cohort: 1407
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Jim%20Sutton.jpg
+  bio: None 
+
+kavita-sachdeva:
+  name: Kavita Sachdeva
+  title: Student
+  cohort: 1407
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Kavita%20Sachdeva.jpg
+  bio: None 
+
+luke-aiken:
+  name: Luke Aiken
+  title: Student
+  cohort: 1407
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Luke%20Aiken.jpg
+  bio: None 
+
+rolando-navarette:
+  name: Rolando Navarette
+  title: Student
+  cohort: 1407
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Rolando%20Navarette.jpg
+  bio: None 
+
+sara-simon:
+  name: Sara Simon
+  title: Student
+  cohort: 1407
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Sara%20Simon.jpg
+  bio: None 
