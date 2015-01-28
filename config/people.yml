@@ -157,3 +157,83 @@ scott-crawford:
   name: Scott Crawford
   cohort: 1410
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Scott%20Crawford.jpg
+
+adam-smith:
+  name: Adam Smith
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Adam%20Smith.jpg
+  cohort: 1409
+
+alex-jensen:
+  name: Alex Jensen
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Alex%20Jensen.jpg
+  cohort: 1409
+
+chandra-carney:
+  name: Chandra Carney
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Chandra%20Carney.jpg
+  cohort: 1409
+
+christopher-bynum:
+  name: Christopher Bynum
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Christopher%20Bynum.jpg
+  cohort: 1409
+
+danny-glunz:
+  name: Danny Glunz
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Danny%20Glunz.jpg
+  cohort: 1409
+
+david-bayendor:
+  name: David Bayendor
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/David%20Bayendor.jpg
+  cohort: 1409
+
+greg-narajka:
+  name: Greg Narajka
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Greg%20Narajka.jpg
+  cohort: 1409
+
+herbert-joseph:
+  name: Herbert Joseph
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Herbert%20Joseph.jpg
+  cohort: 1409
+
+kalah-cheek:
+  name: Kalah Cheek
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Kalah%20Cheek.jpg
+  cohort: 1409
+
+konr-laron:
+  name: Konr Laron
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Konr%20Laron.jpg
+  cohort: 1409
+
+sam-kulmann:
+  name: Sam Kulmann
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Sam%20Kulmann.jpg
+  cohort: 1409
+
+timothy-mee:
+  name: Timothy Mee
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Timothy%20Mee.jpg
+  cohort: 1409
+
+travis-yoder:
+  name: Travis Yoder
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Travis%20Yoder.jpg
+  cohort: 1409
+
+viki-harrod:
+  name: Viki Harrod
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Viki%20Harrod.jpg
+  cohort: 1409
+
+zach-routhier:
+  name: Zach Routhier
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Zach%20Routhier.jpg
+  cohort: 1409
+
+chase-van-hekken:
+  name: Chase van Hekken
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Chase%20van%20Hekken.jpg
+  cohort: 1409
