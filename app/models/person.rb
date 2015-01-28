@@ -12,8 +12,4 @@ class Person < ActiveRecord::Base
   def self.with_all_cohorts_except(cohort_name)
     where.not(cohort: cohort_name)
   end
-
-  def trivia
-    self[:trivia].split(TRIVIA_SEPARATOR)
-  end
 end

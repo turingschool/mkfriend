@@ -6,15 +6,6 @@
     </p>
 
     <p><%= image_tag @previous_person.image_url %></p>
-    <p><%= raw @previous_person.bio %></p>
-    <% if @previous_person.trivia.present? %>
-      <h5>Trivia</h5>
-      <ul>
-        <% @previous_person.trivia.each do |trivium| %>
-          <li><%= trivium %></li>
-        <% end %>
-      </ul>
-    <% end %>
   <% end %>
 </div>
 

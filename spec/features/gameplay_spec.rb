@@ -42,14 +42,12 @@ feature "gameplay" do
   end
 
   context "an incorrect or incorrect guess" do
-    it "shows the trivia, bio, and image for the previous person" do
-      person = create(:person, bio: "Radical", trivia: "trivia1\ntrivia2")
+    it "shows the image for the previous person" do
+      person = create(:person)
       start_game_with [person, create(:person)]
 
       guess(person.name)
 
-      expect_to_show_trivia_for(person)
-      expect(page).to have_content(person.bio)
       expect(page).to show_image_for(person)
     end
 
@@ -126,14 +124,6 @@ feature "gameplay" do
   # Just start a game, no fanciness.
   def start_game
     start_game_with create_pair(:person)
-  end
-
-  ##
-  # Are all of the trivia for this person being shown?
-  def expect_to_show_trivia_for(person)
-    person.trivia.each do |trivium|
-      expect(page).to have_css("li", text: trivium)
-    end
   end
 
   def guess_remaining_people_incorrectly
