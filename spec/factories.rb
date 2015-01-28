@@ -11,7 +11,6 @@ FactoryGirl.define do
 
   factory :person do
     sequence(:slug) { |n| "slug#{n}" }
-    bio "I am cool"
     image_url
     name
     cohort "Boston"

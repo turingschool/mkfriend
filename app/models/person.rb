@@ -1,9 +1,6 @@
 class Person < ActiveRecord::Base
-  TRIVIA_SEPARATOR = "\n"
-
   validates :slug, presence: true
   validates :image_url, presence: true
-  validates :bio, presence: true
 
   def self.all_cohort_names
     select('DISTINCT cohort').

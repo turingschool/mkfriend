@@ -11,8 +11,6 @@ namespace :turing do
       result = person.update(
         image_url: data["image_url"],
         name: data["name"],
-        title: data["title"],
-        bio: data["bio"],
         cohort: data["cohort"],
       )
 

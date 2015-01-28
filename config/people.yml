@@ -1,60 +1,50 @@
 aaron-wortham:
   name: Aaron Wortham
-  title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Aaron%20Wortham.jpg
 
 glen-egbert:
   name: Glen Egbert
-  title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Glen%20Egbert.jpg
 
 ian-anderson:
   name: Ian Anderson
-  title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Ian%20Anderson.jpg
 
 jim-sutton:
   name: Jim Sutton
-  title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Jim%20Sutton.jpg
 
 kavita-sachdeva:
   name: Kavita Sachdeva
-  title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Kavita%20Sachdeva.jpg
 
 luke-aiken:
   name: Luke Aiken
-  title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Luke%20Aiken.jpg
 
 rolando-navarette:
   name: Rolando Navarette
-  title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Rolando%20Navarette.jpg
 
 sara-simon:
   name: Sara Simon
-  title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Sara%20Simon.jpg
 
 orion-osborn:
   name: Orion Osborn
-  title: Student
   cohort: 1410
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Orion%20Osborn.jpg
 
 rich-shea:
   name: Rich Shea
-  title: Student
   cohort: 1410
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Rich%20Shea.jpg
 
