@@ -227,3 +227,98 @@ chase-van-hekken:
   name: Chase van Hekken
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1409/Chase%20van%20Hekken.jpg
   cohort: 1409
+
+andrew-overby:
+  name: Andrew Overby
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Andrew%20Overby.jpg
+  cohort: 1412
+
+austin-wood:
+  name: Austin Wood
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Austin%20Wood.jpg
+  cohort: 1412
+
+DJ-greenfield:
+  name: DJ Greenfield
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/DJ%20Greenfield.jpg
+  cohort: 1412
+
+david-maurer:
+  name: David Maurer
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/David%20Maurer.jpg
+  cohort: 1412
+
+edward-macarthy:
+  name: Edward Macarthy
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Edward%20Macarthy.jpg
+  cohort: 1412
+
+fred-block:
+  name: Fred Block
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Fred%20Block.jpg
+  cohort: 1412
+
+jack-yeh:
+  name: Jack Yeh
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Jack%20Yeh.jpg
+  cohort: 1412
+
+jeffrey-gu:
+  name: Jeffrey Gu
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Jeffrey%20Gu.jpg
+  cohort: 1412
+
+kyle-hensen:
+  name: Kyle Hensen
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Kyle%20Hensen.jpg
+  cohort: 1412
+
+kyra-weber:
+  name: Kyra Weber
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Kyra%20Weber.jpg
+  cohort: 1412
+
+lori-culberson:
+  name: Lori Culberson
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Lori%20Culberson.jpg
+  cohort: 1412
+
+manny-navarro:
+  name: Manny Navarro
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Manny%20Navarro.jpg
+  cohort: 1412
+
+markus-olsen:
+  name: Markus Olsen
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Markus%20Olsen.jpg
+  cohort: 1412
+
+miriam-moser:
+  name: Miriam Moser
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Miriam%20Moser.jpg
+  cohort: 1412
+
+paul-grever:
+  name: Paul Grever
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Paul%20Grever.jpg
+  cohort: 1412
+
+stanley-siudzinski:
+  name: Stanley Siudzinski
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Stanley%20Siudzinski.jpg
+  cohort: 1412
+
+teresa-finn:
+  name: Teresa Finn
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Teresa%20Finn.jpg
+  cohort: 1412
+
+tino-espinoza:
+  name: Tino Espinoza
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Tino%20Espinoza.jpg
+  cohort: 1412
+
+trey-tomlinson:
+  name: Trey Tomlinson
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1412/Trey%20Tomlinson.jpg
+  cohort: 1412
