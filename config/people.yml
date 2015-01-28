@@ -1,69 +1,159 @@
-orion-osborn:
-  name: Orion Osborn
-  title: Student
-  cohort: 1410
-  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Orion%20Osborn.jpg
-  bio: Orion's parents were clearly hippies.
-
-rich-shea:
-  name: Rich Shea
-  title: Student
-  cohort: 1410
-  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Rich%20Shea.jpg
-  bio: None
-
 aaron-wortham:
   name: Aaron Wortham
   title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Aaron%20Wortham.jpg
-  bio: None
 
 glen-egbert:
   name: Glen Egbert
   title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Glen%20Egbert.jpg
-  bio: None
 
 ian-anderson:
   name: Ian Anderson
   title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Ian%20Anderson.jpg
-  bio: None 
 
 jim-sutton:
   name: Jim Sutton
   title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Jim%20Sutton.jpg
-  bio: None 
 
 kavita-sachdeva:
   name: Kavita Sachdeva
   title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Kavita%20Sachdeva.jpg
-  bio: None 
 
 luke-aiken:
   name: Luke Aiken
   title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Luke%20Aiken.jpg
-  bio: None 
 
 rolando-navarette:
   name: Rolando Navarette
   title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Rolando%20Navarette.jpg
-  bio: None 
 
 sara-simon:
   name: Sara Simon
   title: Student
   cohort: 1407
   image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1407/Sara%20Simon.jpg
-  bio: None 
+
+orion-osborn:
+  name: Orion Osborn
+  title: Student
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Orion%20Osborn.jpg
+
+rich-shea:
+  name: Rich Shea
+  title: Student
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Rich%20Shea.jpg
+
+alex-robinson:
+  name: Alex Robinson
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Alex%20Robinson.jpg
+
+andrew-overby:
+  name: Andrew Overby
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Andrew%20Overby.jpg
+
+bhargavi-satpathy:
+  name: Bhargavi Satpathy
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Bhargavi%20Satpathy.jpg
+
+brandon-mrsny:
+  name: Brandon Mrsny
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Brandon%20Mrsny.jpg
+
+bryce-holcomb:
+  name: Bryce Holcomb
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Bryce%20Holcomb.jpg
+
+chris-luhring:
+  name: Chris Luhring
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Chris%20Luhring.jpg
+
+dustin-gault:
+  name: Dustin Gault
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Dustin%20Gault.jpg
+
+edward-mcCarthy:
+  name: Edward McCarthy
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Edward%20McCarthy.jpg
+
+emily-berkeley:
+  name: Emily Berkeley
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Emily%20Berkeley.jpg
+
+jeff-wan:
+  name: Jeff Wan
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Jeff%20Wan.jpg
+
+juan-navarro:
+  name: Juan Navarro
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Juan%20Navarro.jpg
+
+kalah-cheek:
+  name: Kalah Cheek
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Kalah%20Cheek.jpg
+
+kit-pearson:
+  name: Kit Pearson
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Kit%20Pearson.jpg
+
+krista-nelson:
+  name: Krista Nelson
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Krista%20Nelson.jpg
+
+laura-whalin:
+  name: Laura Whalin
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Laura%20Whalin.jpg
+
+lori-culberson:
+  name: Lori Culberson
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Lori%20Culberson.jpg
+
+lydia-shafer:
+  name: Lydia Shafer
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Lydia%20Shafer.jpg
+
+mike-dao:
+  name: Mike Dao
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Mike%20Dao.jpg
+
+nathan-owsiany:
+  name: Nathan Owsiany
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Nathan%20Owsiany.jpg
+
+scott-crawford:
+  name: Scott Crawford
+  cohort: 1410
+  image_url: http://turing-headshots.s3-us-west-1.amazonaws.com/turing-1410/Scott%20Crawford.jpg
